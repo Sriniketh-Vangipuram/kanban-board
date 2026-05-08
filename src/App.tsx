@@ -10,13 +10,13 @@ import Column from "./components/Column";
 import AddTask from "./components/AddTask";
 
 const App = () => {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<Task[]>(() => {
+  const data = localStorage.getItem("tasks");
+     return data ? JSON.parse(data) : [];
+  });
   const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    const data = localStorage.getItem("tasks");
-    if (data) setTasks(JSON.parse(data));
-  }, []);
+ 
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
