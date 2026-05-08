@@ -23,7 +23,7 @@ https://kanban-board-2ue97kqmr-sriniketh-vangipurams-projects.vercel.app/
 
 ## 🎥 Demo Video
 
-https://your-vercel-link.vercel.app
+https://youtu.be/oqI5HlZsSv0
 
 ----
 
