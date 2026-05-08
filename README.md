@@ -1,73 +1,99 @@
-# React + TypeScript + Vite
+# 🚀 Kanban Task Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Project Overview
 
-Currently, two official plugins are available:
+This project is a modern Kanban Task Management Board built using React, TypeScript, Vite, TailwindCSS, and dnd-kit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+It was developed as part of Week 5 internship mission, focusing on:
 
-## React Compiler
+- React Components
+- useState & Props
+- TypeScript
+- Drag and Drop
+- LocalStorage Persistence
+- Responsive SaaS UI Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+https://kanban-board-2ue97kqmr-sriniketh-vangipurams-projects.vercel.app/
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🎥 Demo Video
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+https://your-vercel-link.vercel.app
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+----
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📸 Screenshots
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🖥️ Desktop View
+
+<img width="1865" height="807" alt="image" src="https://github.com/user-attachments/assets/a467941d-a71c-4209-bd55-e5e294e838f7" />
+
+
+### 🚀 Drag & Drop Feature
+
+<img width="1882" height="811" alt="image" src="https://github.com/user-attachments/assets/78b6c195-94ac-424b-986d-fd1b222c5d4a" />
+
+---
+
+## ✨ Features
+
+- Add Tasks
+- Edit Tasks Inline
+- Delete Tasks
+- Move Tasks Between Columns
+- Drag & Drop using dnd-kit
+- Search & Filter Tasks
+- Priority System
+  - High → Red
+  - Medium → Yellow
+  - Low → Green
+- LocalStorage Persistence
+- Responsive Design
+- Modern SaaS Dashboard UI
+- Smooth Hover Interactions
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- TypeScript
+- Vite
+- TailwindCSS
+- dnd-kit
+
+---
+
+## 📂 Folder Structure
+
+```bash
+src/
+│── components/
+│    │── AddTask.tsx
+│    │── Column.tsx
+│    │── TaskCard.tsx
+│
+│── types/
+│    │── task.ts
+│
+│── App.tsx
+│── main.tsx
+│── index.css
+
+
+## 📌 Notes
+Built using React + TypeScript with Vite
+Used TailwindCSS for modern responsive UI
+Implemented drag-and-drop using dnd-kit
+Used localStorage for task persistence
+Followed component-based architecture
+
+
+👨‍💻 Author
+
+Sriniketh Vangipuram
